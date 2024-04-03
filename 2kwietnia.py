@@ -1,3 +1,7 @@
+#https://www.codecademy.com/learn/learn-the-command-line
+#figma.com (projektowanie wyglądu/zachowania aplikacji, stron internetowych)
+
+
 a = 0     #zamiana na int powoduje obcięcie wartości po kropce
 b = 3       
 c = '30'    #zmiana na int możliwa, gdyż string zawiera liczbę
@@ -38,3 +42,19 @@ if a == 0 and b < 0:
 if a == 0 or b < 0:
     print("a = 0  albo b > 0")
 
+### wprowadzanie zmiennej z konsoli ###
+
+# bez zamiany int() zmienna będzie str (string)
+#print("Podana wartość: ", zgadywanka)
+#print(type(zgadywanka))
+losowa_liczba = 73
+for i in range(5):      #pozwala na powtórzenie 5 krotne zawartości
+    zgadywanka = int(input('Zgadnij wartość liczby (0 do 100): '))
+    if zgadywanka == losowa_liczba:
+        print("Wygrana!")
+        break
+    elif zgadywanka > losowa_liczba:
+        print("Szukana liczba jest mniejsza!")
+    else:
+        print("Szukana liczba jest większa!")
+print("Koniec!")
