@@ -1,0 +1,6 @@
+
+    git init
+    git add .
+    git commit -m "tu wstaw komentarz"
+    git remote add origin https://github.com/user/test.git
+    git push -u -f origin main
