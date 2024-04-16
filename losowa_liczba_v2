@@ -1,6 +1,6 @@
 from random import randint
 
-ilosc_zgadywan = 7
+ilosc_zgadywan = 6
 
 losowa_liczba = randint(0,10)
 
