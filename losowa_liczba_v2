@@ -1,6 +1,7 @@
 from random import randint
 
 ilosc_zgadywan = 6
+#wygrana = False
 
 losowa_liczba = randint(0,10)
 
@@ -12,16 +13,19 @@ def sprawdz_czy_liczba(x):
 def zgaduj(liczba):
     if liczba == losowa_liczba:
         print("Wygrana!")
-        wygrana = True
+        return True
     elif liczba > losowa_liczba:
         print("Szukana liczba jest mniejsza!")
+        return False
     else:
         print("Szukana liczba jest większa!")
+        return False
 
 for i in range(ilosc_zgadywan):      
     zgadywanka = input('Zgadnij wartość liczby (0 do 10): ')
     if sprawdz_czy_liczba(zgadywanka):  
-        zgaduj(int(zgadywanka))         #do zrobienia - po wygranej przerwanie pętli!
+        if zgaduj(int(zgadywanka)):
+            break        #do zrobienia - po wygranej przerwanie pętli!
         
 
 print("Koniec!")    #poza pętlą for
