@@ -47,5 +47,23 @@ print(num.isnumeric()) # True
 num = '10.5'
 print(num.isnumeric()) # False
 
+# Obsługa plików w pythonie
+
+#dobry sposób na wczytanie pliku a następnie jego zamknięcie
+
+with open('./files/tekst.txt', encoding="utf-8") as f:
+    lines = f.read().splitlines()
+
+with open('./files/nowy_tekst.txt','w', encoding="utf-8") as f:
+    for linia in lines:
+        if len(linia)<=1:
+            pass
+        else:
+            f.write(linia)
+            f.write('\n')
+
+
+    
+
 
 
