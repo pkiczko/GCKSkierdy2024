@@ -32,7 +32,7 @@ from pygame.locals import (
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 
-SPEED = 20 # najwolniej 5 # 50 to bardzo szybko
+SPEED = 30 # najwolniej 5 # 50 to bardzo szybko
 
 # Define a Player object by extending pygame.sprite.Sprite
 # The surface drawn on the screen is now an attribute of 'player'
